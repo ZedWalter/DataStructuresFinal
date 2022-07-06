@@ -4,8 +4,8 @@
 * Contact Information
 ## II. Stack
 * Introduction
-* Hashing
-* Conflicts
+* Understanding Stacks
+* Push/Pop
 * Example
 * Problem to Solve
 ## III. Linked list
