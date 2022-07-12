@@ -15,3 +15,4 @@ However there is another way to store sets of data, and that is randomly within 
 <img src="https://miro.medium.com/max/1280/0*SESFJYWU5a-3XM9m.gif">
 <figcaption align= "center"> <a href=https://www.geeksforgeeks.org/data-structures/linked-list>Image source</a></figcaption>
 </figure>
+
