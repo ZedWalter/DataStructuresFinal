@@ -89,7 +89,7 @@ game.add_card("Heartfire") #P1
 # print(game) ["Shock", "Shock", "Counter Spell", "Lightning Bolt", "Spell Pierece", "Heartfire"]
 game.remove_card()
 # print(game) ["Shock", "Shock", "Counter Spell", "Lightning Bolt", "Spell Pierece"]
-
+```
 
 #### Problem set
 
