@@ -12,7 +12,7 @@ However there is another way to store sets of data, and that is randomly within 
 
 <!-- Linked List image -->
 <figure>
-<img src="https://miro.medium.com/max/1280/0*SESFJYWU5a-3XM9m.gif">
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png">
 <figcaption align= "center"> <a href=https://www.geeksforgeeks.org/data-structures/linked-list>Image source</a></figcaption>
 </figure>
 
