@@ -14,7 +14,7 @@ Stacks are a unique data structure that is often called "Last In, First Out" (LI
 <figcaption align= "center"> <a href=https://medium.com/@1991dharapatel/javascript-stacks-and-queues-136fabab8359>Image source</a></figcaption>
 </figure>
 
-#### Understanding Stack operations
+### Understanding Stack operations
 
 Stacks are relavively simple in the operations you can do to them. You can add things to the list, remove things from the list, determine the size of the list, and return a boolean value if the list is empty.
 
@@ -40,7 +40,7 @@ the last two operations we can perform on are stack are determinging the size of
     return if length == 0: # This line returns true if the size is empty.
 ```
 
-#### Big O Efficiency & Limitations
+### Big O Efficiency & Limitations
 
 Stacks although limited in their capacity stacks are very efficient at what they do. Since pushing and popping are only operations you can do to the end of the list, all the operations listed above have a O(1) efficiency.
 
@@ -48,7 +48,7 @@ Lets take our gun magazine example from above. What would happen to the first bu
 
 Another limitation is that you can't edit anything in the middle or beginning of the stack. If you want to access a piece of data in the middle of your stack, you have to remove all data that was placed after, until you get to the data you are trying to edit.
 
-#### Strengths & Real World Applications
+### Strengths & Real World Applications
 
 Although limited in it's capacity, what a stack is really good at is keeping track of where you are. In fact, you might not know it, but you use a stack almost every time you program and encounter a bug.
 
@@ -61,7 +61,7 @@ When you encounter an error, the debugger shows you the last functions or lines 
 
 The stack also has uses outside of programming! The popular card game "Magic the Gathering" applies a physical stack when you want to interact with your opponents cards. 
 
-#### Coding example
+### Coding example
 
 Lets take the magic example from above and create a theoretical game. For additional context, P1 is a MonoR player and P2 is a dirty Simic player at 6hp.
 
@@ -91,6 +91,6 @@ game.remove_card()
 # print(game) ["Shock", "Shock", "Counter Spell", "Lightning Bolt", "Spell Pierece"]
 ```
 
-#### Problem set
+## Problem set
 
 Now it's your turn. Write code that shows the top 3 cards of Player 1's graveyard. You can use the cards above (in stack order) as that players current graveyard.
