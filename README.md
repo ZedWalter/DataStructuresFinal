@@ -2,7 +2,7 @@
 ## I. Welcome
 * Introduction
 * Contact Information
-## II. Stack
+## II. [Stack](https://github.com/ZedWalter/DataStructuresFinal/blob/main/Stacks/stacks.md)
 * Introduction
 * Understanding Stacks
 * Push/Pop
