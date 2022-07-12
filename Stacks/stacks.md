@@ -22,15 +22,13 @@ The way that we add and remove from a stack is using push and pop commands. The 
 
 ```python
 # Push
-def append(text):
-  stack = []
-  for letter in text:
-    stack.append(letter)
-  return stack
+
+stack = []
+for letter in text:
+  stack.append(letter)
   
 # Pop
-def pop(stack)
-  return stack.pop()
+  print(stack.pop())
 ```
 
 the last two operations we can perform on are stack are determinging the size of the list and if the list is empty, these two operations are very commonly used together.
@@ -63,4 +61,36 @@ When you encounter an error, the debugger shows you the last functions or lines 
 
 The stack also has uses outside of programming! The popular card game "Magic the Gathering" applies a physical stack when you want to interact with your opponents cards. 
 
-***Need exmple/Implementation problem***
+#### Coding example
+
+Lets take the magic example from above and create a theoretical game. For additional context, P1 is a MonoR player and P2 is a dirty Simic player at 6hp.
+
+```python
+class GameStack:
+  def __init__(self):
+    self.stack = []
+    
+  def add_card(self,card):
+    self.stack.append(card)
+  
+  def remove_card(self):
+    return self.stack.pop()
+    
+  def length(self):
+    return len(self.stack)
+  
+game = GameStack()
+game.add_card("Shock") #P1
+game.add_card("Shock") #P1
+game.add_card("Counter Spell") #P2
+game.add_card("Lightning Bolt") #P1
+game.add_card("Spell Pierce") #P2
+game.add_card("Heartfire") #P1
+# print(game) ["Shock", "Shock", "Counter Spell", "Lightning Bolt", "Spell Pierece", "Heartfire"]
+game.remove_card()
+# print(game) ["Shock", "Shock", "Counter Spell", "Lightning Bolt", "Spell Pierece"]
+
+
+#### Problem set
+
+Now it's your turn. Write code that shows the top 3 cards of Player 1's graveyard. You can use the cards above (in stack order) as that players current graveyard.
