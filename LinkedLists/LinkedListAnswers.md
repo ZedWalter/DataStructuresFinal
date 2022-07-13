@@ -1,4 +1,4 @@
-    ```python
+```python
     def circular_list(self):
         self.tail.next = self.head
         self.head.prev = self.tail
@@ -9,4 +9,4 @@
             yield current.data
             current = current.prev
             
-   ```
+```
