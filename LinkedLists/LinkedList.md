@@ -137,13 +137,6 @@ class LinkedList:
             yield curr.data 
             curr = curr.next 
 
-    #Move through the list backward
-    def __reversed__(self):
-        current = self.tail
-        while current is not None:
-            yield current.data
-            current = current.prev
-
     def __str__(self):
         output = "linkedlist["
         first = True
@@ -156,3 +149,7 @@ class LinkedList:
         output += "]"
         return output
 ```
+
+## Problem set
+
+Now it's your turn. Imagine you are playing a game of Uno, write a function to turn the linked list into a circular linked list. After you have that implemented, imagine someone plays a reverse card. Write a function to reverse traverse through the list!
