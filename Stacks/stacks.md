@@ -1,4 +1,4 @@
-**Data Structure 1: Stackss**
+**Data Structure 1: Stacks**
 
 
 ---
