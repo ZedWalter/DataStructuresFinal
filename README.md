@@ -2,13 +2,13 @@
 ## I. Welcome
 * Introduction
 * Contact Information
-## II. [Stack](https://github.com/ZedWalter/DataStructuresFinal/blob/main/Stacks/stacks.md)
+## [II. Stack](https://github.com/ZedWalter/DataStructuresFinal/blob/main/Stacks/stacks.md)
 * Introduction
 * Understanding Stacks
 * Push/Pop
 * Example
 * Problem to Solve
-## III. Linked list
+## [III. Linked list](https://github.com/ZedWalter/DataStructuresFinal/blob/main/LinkedLists/LinkedList.md)
 * Introduction
 * Inserting
 * Removing
