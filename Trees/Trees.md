@@ -9,8 +9,8 @@
 
 <!-- Stack image -->
 <figure>
-<img src="https://miro.medium.com/max/1280/0*SESFJYWU5a-3XM9m.gif">
-<figcaption align= "center"> <a href=https://medium.com/@1991dharapatel/javascript-stacks-and-queues-136fabab8359>Image source</a></figcaption>
+<img src="https://scaler.com/topics/images/tree-data-structure-terminologies.webp">
+<figcaption align= "center"> <a href="https://www.scaler.com/topics/data-structures/tree-data-structure/">Image source</a></figcaption>
 </figure>
 
 ### Understanding Tree operations
