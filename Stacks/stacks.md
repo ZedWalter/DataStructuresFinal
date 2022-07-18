@@ -94,3 +94,5 @@ game.remove_card()
 ## Problem set
 
 Now it's your turn. Create a graveyard class and write a function to show the top 3 cards of Player 1's graveyard. You can use the cards above (in stack order) as that players current graveyard.
+
+[Solution](StackAnswers.md)
