@@ -28,10 +28,12 @@ To further increase the speeds of our operations we come to the last subcategory
 </figure>
 
 ### Understanding Tree operations
+Trees, like all other data structures allow you to insert, delete, find data, check the size and see if it's empty. However, trees are similar to linked lists so they do have some additional similar operations. You can traverse both forward and backwards through the list and you can also check the height of a specific node.
+
 Lets first talk about inserting into a tree.
 
-
 ```python
+#Insert
 def insert(self, data):
   #Insert into the tree. If the tree is empty the first input will become the root.
 	if self.root is None:
@@ -62,12 +64,67 @@ Inserting and traversing through the tree is done recursively. You would not wan
 
 
 ```python
-  # Size/Empty
-  def size_empty(stack)
-    length = len(stack)   # This line determines the size of the stack.
-    return if length == 0: # This line returns true if the size is empty.
+#Find data
+def contains(self, data):
+    return self._contains(data, self.root)
+
+def _contains(self, data, node):
+    if node is None:
+        return False
+    elif data == node.data:
+        return True
+    elif data < node.data:
+        return self._contains(data, node.left)
+    elif data > node.data:
+        return self._contains(data, node.right)
 ```
 
+Traversing through the list takes 0(n) time just like all the other data structures
+
+```python
+def traverse_forward(self):
+    yield from self._traverse_forward(self.root)
+
+def _traverse_forward(self, node):
+    if node is not None:
+        yield from self._traverse_forward(node.left)
+        yield node.data
+        yield from self._traverse_forward(node.right)
+	
+def traverse_backward(self):
+    yield from self._traverse_backward(self.root)
+
+def _traverse_backward(self, node):
+    if node is not None:
+        yield from self._traverse_backward(node.right)
+        yield node.data
+        yield from self._traverse_backward(node.left)	
+
+```
+Note that the yield command provides us the next value for our loop. It works very similar to a return statement however where return ends the function, yield lets you start where you left off.
+
+Optaining the height of a BST as well as the size can be done recurselively and they take O(n) and O(1) respectively.
+
+```python
+def get_height(self):
+    return self._get_height(self.root)
+
+def _get_height(self, node):
+    if node is None:
+        return 0
+    else:
+        return 1 + max(self._get_height(node.left), self._get_height(node.right))
+
+
+def get_size(self):
+    return self._get_size(self.root)
+
+def _get_size(self, node):
+    if node is None:
+        return 0
+    else:
+        return 1 + self._get_size(node.left) + self._get_size(node.right)
+```
 ### Big O Efficiency & Limitations
 
 
