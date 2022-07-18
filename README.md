@@ -1,14 +1,14 @@
 # Python Fundamentals Tutorial
-## I. Welcome
+## [I. Welcome](welcome.md)
 * Introduction
 * Contact Information
-## [II. Stack](https://github.com/ZedWalter/DataStructuresFinal/blob/main/Stacks/stacks.md)
+## [II. Stack](/Stacks/stacks.md)
 * Introduction
 * Understanding Stacks
 * Push/Pop
 * Example
 * Problem to Solve
-## [III. Linked list](https://github.com/ZedWalter/DataStructuresFinal/blob/main/LinkedLists/LinkedList.md)
+## [III. Linked list](/LinkedLists/LinkedList.md)
 * Introduction
 * Inserting
 * Removing
