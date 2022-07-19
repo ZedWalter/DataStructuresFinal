@@ -1,6 +1,6 @@
 **Data Structure 2: Linked Lists**
 
-
+[Home](../welcome.md)
 ---
 
 ## **Introduction**
