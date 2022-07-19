@@ -5,10 +5,10 @@
 
 ## **Introduction**
 
-Trees are a lot like the linked lists that we just learned about. They are made up of nodes and each node is connected to each other by pointers. The thing that makes trees unique from linked lists, is that nodes can connect to multiple different noedes. Trees is actually a overall category and is often broken up into 3 subcategories: binary, binary search, and balanced binary search.
+Trees are a lot like the linked lists that we just learned about. They are made up of nodes and each node is connected to each other by pointers. The thing that makes trees unique from linked lists, is that nodes can connect to multiple different nodes. Trees is actually an overall category and is often broken up into 3 subcategories: binary, binary search, and balanced binary search.
 
 #### Understanding Trees
-If we extrapolate from the binary in the name binary trees we can initiall understand that there is 2. But 2 of what? Trees allow you to connect a node to multiple other nodes, binary trees limit these node connections to just 2. depending on where these nodes are in a given tree, we give them different names. Refer to the image below to see what position gives each node it's category.
+If we extrapolate from the binary in the name binary trees, we can initially understand that there is 2. But 2 of what? Trees allow you to connect a node to multiple other nodes, binary trees limit these node connections to just 2. depending on where these nodes are in a given tree, we give them different names. Refer to the image below to see what position gives each node it's category.
 
 <!-- Stack image -->
 <figure>
@@ -18,9 +18,9 @@ If we extrapolate from the binary in the name binary trees we can initiall under
 
 The first node is always called a root node and there can only ever be one of them. After that we have parent nodes, these are nodes that have child nodes underneath them and if it's a child node with no children under it, it is called a leaf.
 
-A binary search tree (BST) is a binary tree that has a ruleset for the data put within it. Data that gets put into a BST is compared to each root/parent node to determin where it's final location in the tree should be. In general, smaller numbers go on the left of the root/parent while larger numbersgo on the right. By using this method the data within the tree becomes sorted and that allows for much faster operations.
+A binary search tree (BST) is a binary tree that has a ruleset for the data put within it. Data that gets put into a BST is compared to each root/parent node to determin where it's final location in the tree should be. In general, smaller numbers go on the left of the root/parent while larger numbersgo on the right. By using this method, the data within the tree becomes sorted and that allows for much faster operations.
 
-To further increase the speeds of our operations we come to the last subcategory of tree, a balanced BST. What a balanced BST does is exactly in the name, it prevents one side of the tree from becoming much larger then the other. If one side becomes to large, it shuffles the nodes around until each branch of the root node is relatively even in size. An easy way to do this is to check the height of each side of the tree. If one side exceeds the height of the other side by 2 then some balancing needs to occur. Many different programs have been created to detect and solve unbalanced binary trees.
+To further increase the speeds of our operations we come to the last subcategory of tree, a balanced BST. What a balanced BST does is exactly in the name, it prevents one side of the tree from becoming much larger than the other. If one side becomes too large, it shuffles the nodes around until each branch of the root node is relatively even in size. An easy way to do this is to check the height of each side of the tree. If one side exceeds the height of the other side by 2 then some balancing needs to occur. Many different programs have been created to detect and solve unbalanced binary trees.
 
 <figure>
 <img src="https://stanford.edu/class/archive/cs/cs106b/cs106b.1158/images/balanced-tree-figure.png">
@@ -30,7 +30,7 @@ To further increase the speeds of our operations we come to the last subcategory
 ### Understanding Tree operations & Big O Efficiency
 Trees, like all other data structures allow you to insert, delete, find data, check the size and see if it's empty. However, trees are similar to linked lists so they do have some additional similar operations. You can traverse both forward and backwards through the list and you can also check the height of a specific node.
 
-Lets first talk about inserting into a tree.
+Let’s first talk about inserting into a tree.
 
 ```python
 #Insert
@@ -103,7 +103,7 @@ def _traverse_backward(self, node):
 ```
 Note that the yield command provides us the next value for our loop. It works very similar to a return statement however where return ends the function, yield lets you start where you left off.
 
-Optaining the height of a BST as well as the size can be done recurselively and they take O(n) and O(1) respectively.
+Obtaining the height of a BST as well as the size can be done recursively and they take O(n) and O(1) respectively.
 
 ```python
 def get_height(self):
@@ -162,3 +162,4 @@ def invert_tree(tree):
 Now it's your turn! Write code that will delete a node from a tree! Remember to check for child nodes and connect your node appropriately if there are.
 
 [Solution](TreesAnswers.md)
+
