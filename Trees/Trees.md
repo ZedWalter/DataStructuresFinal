@@ -159,6 +159,6 @@ def invert_tree(tree):
 ```
 
 ## Problem set
-Now it's your turn! Write code that will delete a node from a tree! You can use the code above to find the node you are looking for, but remember to check for child nodes and connect your node appropriately if there are.
+Now it's your turn! Write code that will delete a node from a tree! Remember to check for child nodes and connect your node appropriately if there are.
 
 [Solution](TreeAnswers.md)
