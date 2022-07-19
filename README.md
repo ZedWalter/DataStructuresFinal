@@ -15,7 +15,7 @@
 * Accessing information
 * Example
 * Problem to Solve
-## IV. Tree
+## [IV. Tree](/Trees/Trees.md
 * Introduction
 * Inserting
 * Traversing
