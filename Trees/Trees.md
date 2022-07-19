@@ -1,6 +1,6 @@
 **Data Structure 3: Trees**
 
-[home](welcome.md)
+[Home](DataStructuresFinal/welcome.md)
 ---
 
 ## **Introduction**
