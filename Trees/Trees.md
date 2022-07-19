@@ -27,7 +27,7 @@ To further increase the speeds of our operations we come to the last subcategory
 <figcaption align = "center"> <a href="https://stanford.edu/class/archive/cs/cs106b/cs106b.1158/preview-balanced-tree.shtml">Image Source</a></figcaption>
 </figure>
 
-### Understanding Tree operations
+### Understanding Tree operations & Big O Efficiency
 Trees, like all other data structures allow you to insert, delete, find data, check the size and see if it's empty. However, trees are similar to linked lists so they do have some additional similar operations. You can traverse both forward and backwards through the list and you can also check the height of a specific node.
 
 Lets first talk about inserting into a tree.
@@ -125,20 +125,40 @@ def _get_size(self, node):
     else:
         return 1 + self._get_size(node.left) + self._get_size(node.right)
 ```
-### Big O Efficiency & Limitations
-
-
-
-### Strengths & Real World Applications
-
 
 
 ### Coding example
+For our example, we will be inverting a BST. This is a very common interview or coding test question, one of which I have personally faced and heard about many of my friends also facing. The picture below will describe what we will be doing.
 
+<figure>
+<img src="https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg">
+<figcaption align = "center"> <a href="https://leetcode.com/problems/invert-binary-tree/">Image Source</a></figcaption>
+</figure>
 
+```python
+class BinaryTree:
+    def __init__(self, node):
+        self.node = node
+        self.left = None
+        self.right = None
 
+def invert_tree(tree):
+    if tree is None:
+        return None
+
+    # Swap the subtrees
+    tree.left, tree.right = tree.right, tree.left
+
+    # Call recursively until done
+    invert_tree(tree.left)
+    invert_tree(tree.right)
+
+    #We can also combine the last 3 lines into one
+    #tree.left, tree.right = invert_tree(tree.right), invert_tree(tree.left)
+    return tree
+```
 
 ## Problem set
-
+Now it's your turn! Write code that will delete a node from a tree! You can use the code above to find the node you are looking for, but remember to check for child nodes and connect your node appropriately if there are.
 
 [Solution](TreeAnswers.md)
