@@ -19,7 +19,7 @@ However, there is another way to store sets of data, and that is randomly within
 
  The first node is called the head and by knowing where the head is, you can traverse your entire list by following the pointers. Most lists are also doubly linked, as you can see above, this allows you to traverse both forward and backwards from a node.
 
-### Understanding Linked List Operations
+### Linked List Operations
 
 The power of linked lists comes in understanding their operations. Just like other lists, you can add, remove, find the length and return a bool if the list is empty.
 Because each node has a pointer to the nodes before and after it, inserting and removing do come with additional requirements. However, unlike other types of lists, when you edit your list, each node only effects the nodes with pointers to it. This means that you don't have to worry about expanding your list capacity or maintaining your contiguous memory. This ultimately means that editing especially at the front of your list is more efficient than other types of lists.
