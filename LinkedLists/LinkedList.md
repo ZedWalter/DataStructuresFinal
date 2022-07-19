@@ -154,4 +154,4 @@ class LinkedList:
 
 Now it's your turn. Imagine you are playing a game of Uno, write a function to turn the linked list into a circular linked list. After you have that implemented, imagine someone plays a reverse card. Write a function to reverse traverse through the list!
 
-[Solution](TreesAnswers.md)
+[Solution](LinkedListAnswers.md)
